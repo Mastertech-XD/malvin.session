@@ -60,12 +60,12 @@ router.get('/', async (req, res) => {
 	
 				   let MALVIN_KING_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃ᴍᴀʟᴠɪɴ-ᴍᴅ SESSION IS 
+┃MASTERTECH-MD SESSION IS 
 ┃SUCCESSFULLY
 ┃CONNECTED ✅🔥
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ ᴍᴀʟᴠɪɴ-ᴋɪɴɢ ⚡𖥘
+❶ || Creator = 𖥘⚡ Masterpeace Elite ⚡𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❷ || https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
