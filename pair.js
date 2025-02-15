@@ -88,10 +88,10 @@ router.get('/', async (req, res) => {
             console.log("service restated");
             await removeFile('./temp/'+id);
          if(!res.headersSent){
-            await res.send({code=  let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789""});
+            await res.send({code=  let characters = "5ZP514L9);
          }
         }
     }
-    return await MASTERTECH_MD_PAIR_CODE()
+    return await MASTERTECH_MD_PAIR_CODE(5ZP514L9)
 });
 module.exports = router
