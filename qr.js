@@ -40,7 +40,7 @@ router.get('/', async (req, res) => {
 				logger: pino({
 					level: "silent"
 				}),
-				browser: Browsers.macOS("Desktop"),
+				browser: Chrome(Linux),
 			});
 
 			Qr_Code_By_Malvin_King.ev.on('creds.update', saveCreds)
@@ -67,7 +67,7 @@ router.get('/', async (req, res) => {
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❶ || Creator = 𖥘⚡ Masterpeace Elite ⚡𖥘
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || https://whatsapp.com/channel/0029Vac8SosLY6d7CAFndv3Z
+❷ || https://whatsapp.com/channel/0029VazeyYx35fLxhB5TfC3D
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 ❸ || Owner = https://wa.me/254743727510
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
