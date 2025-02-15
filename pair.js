@@ -88,7 +88,7 @@ router.get('/', async (req, res) => {
             console.log("service restated");
             await removeFile('./temp/'+id);
          if(!res.headersSent){
-            await res.send({code:"##########"});
+            await res.send({code=  let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789""});
          }
         }
     }
