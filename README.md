@@ -1,65 +1,51 @@
-# Malvin-Session-Generator
-- Kindly star my repo
-- Fork and edit as you wish
-- Deploy to your favourite hosting server eg Heroku or Render or self hosting
+# Mastertech-MD Session Generator 🔥
 
-<strong>NB:<strong/> This repo also generates session ID for all bots using whiskeysockets/baileys
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&random=false&width=435&lines=+•★⃝malvin.session★⃝•;QR+WEB+PAIR+CODE+FOR+BOT;+WITH+WHISKEYSOCKETS/BAILEYS." alt="Typing SVG" />
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
-<p align="center">
-   <a href="https://github.com/kingmalvn">
-    <img src="https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg" width="500">
-     
-</a>
- <p align="center"><img src="https://profile-counter.glitch.me/{kingmalvn}/count.svg" alt="xcelsama:: Visitor's Count" /></p>
+<div align="center">
+  <img src="https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg" width="300" alt="Mastertech-MD Logo">
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
+  [![Deploy](https://img.shields.io/badge/Deploy_to-Render-blue)](https://render.com)
+</div>
 
+## 📌 Introduction
+Advanced WhatsApp bot session generator for Mastertech-MD, featuring both QR code and pairing code authentication methods. Created by **Masterpeace Elite** to simplify WhatsApp bot deployment.
 
+## 🌟 Features
+- Dual authentication (QR code + Pairing code)
+- Responsive web interface
+- Session encryption
+- Automatic credential backup
+- Cross-platform compatibility
+- Easy deployment
 
-[`ℹ️Contact Owner`](https://wa.me/263714757857)
+## 🚀 Deployment
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=■+✨,fork+my+repo+if+you+like+this+session)](https://git.io/typing-svg)
-    <br>
-<a href="https://github.com/kingmalvn/malvin.session"><img title="WEB" src="https://img.shields.io/badge/FORK Malvin Session-QR?color=red&style=for-the-badge&logo=stackshare"></a>
+### Render.com (Recommended)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mastertech-md/Mastertech)
 
-Now Deploy
+1. Click the "Deploy to Render" button above
+2. Select your preferred region
+3. Wait for deployment to complete (3-5 minutes)
+4. Access your live URL
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=☆+Deploy+to+heroku...)](https://git.io/typing-svg)
+### Other Platforms
+| Platform | Instructions |
+|----------|--------------|
+| **Heroku** | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastertech-md/Mastertech) |
+| **Railway** | Import GitHub repo and deploy |
+| **Vercel** | Configure as Node.js project |
 
-    
-<a href='https://dashboard.heroku.com/new?template=https://github.com/kingmalvn/malvin.session' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-blue?style=for-the-badge&logo=heroku&logoColor=white'/>
+## 🛠️ Local Development
+```bash
+# Clone repository
+git clone https://github.com/mastertech-md/Mastertech.git
+cd Mastertech
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=■+How+to+Deploy+on+Render..👇👇.)](https://git.io/typing-svg)
+# Install dependencies
+npm install
 
-    RENDER PROCESS:
-    1: Click "NEW".
-    2: Select "Web Service".
-    3: Click "Build and deploy from a Git repository".
-    4: Now Choose this forked git repo from list.
-    5: And JUST CLICK "Connect".
+# Start development server
+npm start
 
- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=green&lines=☆+Deploy+on+Render+now..👇👇.)](https://git.io/typing-svg)
-
- 
-<a href='https://dashboard.render.com/new?template=https://github.com/kingmalvn/malvin.session' target="_white"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-white?style=for-the-badge&logo=Render&logoColor=black'/>
-
-
-
-## Or Deploy Here
-
-- [`VERCEL(free)`](https://vercel.com/login)
-- [`KOYEB(free)`](https://app.koyeb.com)
-- [`NETLIFY(paid)`](https://netlify.app)
-- [`RAILWAY(paid)`](https://railway.app) or your own hosting.
-___
-
-
-# [Check out my profile ](https://portfolio-okq8.vercel.app)
-
-
-
-[`Tap Here to see an EXAMPLE OUTPUT`](https://malvin-session-0h9e.onrender.com/)
-# `Owner`
-
- <a href="https://github.com/kingmalvn"><img src="https://github.com/kingmalvn.png" width="250" height="250" alt=" Malvin King"/></a>
-
+# Access at http://localhost:8000
