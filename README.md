@@ -1,7 +1,7 @@
 # Mastertech-MD Session Generator 🔥
 
 <div align="center">
-  <img src="https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg" width="300" alt="Mastertech-MD Logo">
+  <img src="https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg" width="600" alt="Mastertech-MD Logo">
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
