@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pair Code</title>
+  <title>Mastertech-MD Pair Code</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
@@ -144,10 +144,10 @@
           <p>
             <h3 class="centered-text">MASTERTECH-MD PAIRING CODE</h3>
             <br>
-            <h6>Made By Masterpeace Elite 🔥🥳.</h6>
+            <h6>Made By Masterpeace Elite 🔥🥳</h6>
             <h6>Enter Your Number with Country Code.</h6>
             <div class="input-container">
-              <input placeholder="2547147xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
+              <input placeholder="2547147xxx" type="number" id="number" name="">
               <button id="submit">Submit</button>
             </div>
             
@@ -188,27 +188,32 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Malvin_King = c.value.replace(/[^0-9]/g, "");
-        let bb = "";
-        let bbc = "";
-        const cc = Malvin_King.split('');
-        cc.map(a => {
-          bbc += a;
-          if (bbc.length == 3) {
-            bb += " " + a;
-          } else if (bbc.length == 8) {
-            bb += " " + a;
+        const number = c.value.replace(/[^0-9]/g, "");
+        let formattedNumber = "";
+        let temp = "";
+        const digits = number.split('');
+        digits.map(d => {
+          temp += d;
+          if (temp.length == 3) {
+            formattedNumber += " " + d;
+          } else if (temp.length == 8) {
+            formattedNumber += " " + d;
           } else {
-            bb += a;
+            formattedNumber += d;
           }
         });
         c.type = "text";
-        c.value = "+" + bb;
+        c.value = "+" + formattedNumber;
         c.style = "color:black;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Malvin_King}`);
-        let code = data.code || "DRJT15YR";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        try {
+          let { data } = await axios(`/code?number=${number}`);
+          let code = data.code || "DRJT15YR";
+          a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        } catch (error) {
+          a.innerHTML = '<a style="color:red;font-weight:bold">Error generating code</a><br><br>';
+          console.error(error);
+        }
       }
     });
   </script>
