@@ -4,9 +4,12 @@ services:
     env: node
     plan: free
     region: singapore
-    buildCommand: npm install
+    buildCommand: npm run build
     startCommand: npm start
     envVars:
+      - key: NODE_ENV
+        value: production
       - key: PORT
         value: 8000
     healthCheckPath: /
+    autoDeploy: true
