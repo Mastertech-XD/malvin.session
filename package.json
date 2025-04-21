@@ -1,32 +1,23 @@
 {
   "name": "mastertech-session",
-  "description": "Mastertech-MD WhatsApp Bot Session Generator by Masterpeace Elite",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "node": "18.x",
+    "npm": "9.x"
   },
   "scripts": {
     "start": "node index.js",
-    "build": "echo 'No build required'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm install && npm audit fix",
+    "preinstall": "echo 'Ensuring correct node version'",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
-  "author": "Masterpeace Elite",
-  "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
-    "body-parser": "^1.20.1",
     "express": "^4.18.2",
-    "pastebin-js": "^1.0.6",
+    "qrcode": "^1.5.3",
     "pino": "^8.14.1",
-    "qrcode": "^1.5.3"
-  },
-  "keywords": [
-    "whatsapp",
-    "bot",
-    "session",
-    "mastertech",
-    "baileys"
-  ]
+    "body-parser": "^1.20.1",
+    "pastebin-js": "^1.0.6",
+    "path": "^0.12.7"
+  }
 }
