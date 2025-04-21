@@ -1,4 +1,5 @@
-# Mastertech-MD Session Generator 🔥
+<img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Condensed&size=30&color=00FF00&center=true&width=500&lines=MASTERTECH+MD;WHATSAPP+BOT" alt="Typing animation">
+</h1>
 
 <div align="center">
   <img src="https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg" width="600" alt="Mastertech-MD Logo">
