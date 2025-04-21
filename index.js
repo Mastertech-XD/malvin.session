@@ -1,52 +1,51 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-const bodyParser = require("body-parser");
 
+// Configuration
 const PORT = process.env.PORT || 8000;
-const __path = process.cwd();
-
-// Routes
-const qrRoute = require('./qr');
-const pairRoute = require('./pair');
-
-// Increase event listeners limit
-require('events').EventEmitter.defaultMaxListeners = 500;
+const __dirname = path.resolve();
 
 // Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Static files
-app.use(express.static(path.join(__path, 'public')));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/qr', qrRoute);
-app.use('/code', pairRoute);
+app.use('/qr', require('./qr'));
+app.use('/code', require('./pair'));
 
 app.get('/pair', (req, res) => {
-    res.sendFile(path.join(__path, 'pair.html'));
+  res.sendFile(path.join(__dirname, 'pair.html'));
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__path, 'main.html'));
+  res.sendFile(path.join(__dirname, 'main.html'));
 });
 
-// Error handling
+// Error handling middleware
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send('Something broke!');
+  console.error(err.stack);
+  res.status(500).send('Server Error');
 });
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`
-╔══════════════════════════════════╗
-║   MASTERTECH-MD SESSION SERVER   ║
-║      Created by Masterpeace      ║
-║      Running on port ${PORT}      ║
-╚══════════════════════════════════╝
-`);
+const server = app.listen(PORT, () => {
+  console.log(`
+  ╔══════════════════════════════════╗
+  ║   MASTERTECH-MD RUNNING ON PORT ${PORT}  ║
+  ╚══════════════════════════════════╝
+  `);
 });
 
-module.exports = app;
+// Handle uncaught exceptions
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  server.close(() => process.exit(1));
+});
+
+// Handle unhandled rejections
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled Rejection:', err);
+  server.close(() => process.exit(1));
+});
