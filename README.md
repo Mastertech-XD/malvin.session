@@ -6,7 +6,7 @@
   
   <img src="https://readme-typing-svg.herokuapp.com
 font=Roboto+Condensed&size=30&color=00FF00&center=true&width=500&lines=MASTERTECH+MD;WHATSAPP+BOT" alt="Typing animation">
- </h1>
+ </h2>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
