@@ -1,22 +1,25 @@
 {
-    "name": "King Malvin session",
-    "description": "A session generator platform for all WA bot, Created by Malvin Masterpeace Elite to simplify your digital lives",
-    "logo": "https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg",
-    "repository": "https://github.com/kingmalvn/malvin.session",
-    "keywords": ["malvin.session"],
-    "success_url": "/", 
-    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
-    "env": {      
-      "PORT": {
-        "description": "Port for web app.4000,5000,3000... any!",
-        "value": "5000",
-        "required": false 
-      },
-      "MESSAGE": {
-        "description": "Thanks for using MASTERTECH-MD ",
-        "value": "",
-        "required": false 
-      }
-    }   
-
+  "name": "Mastertech-MD Session",
+  "description": "WhatsApp Bot Session Generator by Masterpeace Elite",
+  "repository": "https://github.com/mastertech-md/Mastertech",
+  "logo": "https://telegra.ph/file/dc73e16b9988c7c56b56f.jpg",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "session",
+    "mastertech",
+    "baileys"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "PORT": {
+      "description": "Port for the web server",
+      "value": "8000",
+      "required": false
+    }
+  }
 }
